@@ -38,5 +38,6 @@ COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 # Expose ports for all challenges
 EXPOSE 9001 9002 9003 9004 9005 9006 9007 9008 9009 9010
 
-# Start supervisord
+# Create OpenShift-writable Supervisor runtime directory
+RUN mkdir -p /tmp/supervisor && chgrp -R 0 /tmp/supervisor && chmod -R g=u /tmp/supervisor
 CMD ["/usr/bin/supervisord"]
