@@ -14,7 +14,7 @@ python = "^3.10"
 fastapi = ">=0.95.0"
 uvicorn = ">=0.21.1"
 httpx = ">=0.24.0"
-mcp = {extras = ["cli"], version = ">=0.5.0"}
+mcp = {extras = ["cli"], version = "<2"}
 starlette = ">=0.27.0"
 
 [tool.poetry.group.dev.dependencies]
@@ -87,4 +87,3 @@ output = "coverage.xml"
 
 [build-system]
 requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
