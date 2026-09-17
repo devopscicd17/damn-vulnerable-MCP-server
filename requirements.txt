@@ -1,5 +1,5 @@
 fastapi>=0.95.0
 uvicorn>=0.21.1
 httpx>=0.24.0
-mcp[cli]>=0.5.0
+mcp[cli]<2
 starlette>=0.27.0
